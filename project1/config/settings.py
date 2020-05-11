@@ -121,5 +121,14 @@ USE_TZ = True
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static'),
     ]
-
+DATABASES={
+        'default':{
+            'ENGINE':'django.db.backends.mysql',
+            'NAME':'edudb',
+            'USER':'root',
+            'PASSWORD':'system',
+            'HOST':'127.0.0.1',
+            'PORT':'3306',
+        }
+}
 STATIC_URL = '/static/'
